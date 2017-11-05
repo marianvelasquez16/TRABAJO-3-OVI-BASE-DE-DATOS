@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Actividad 1</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	background-color: #B3B3B3;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: "Franklin Gothic Book";
+	font-size: 100%;
+	line-height: 1.4;
+	border: 1 px;
+	border-color: #808080;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	background-color: #FFF;
+	text-align: justify;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+	text-align: center;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+	text-align: right;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+	border-bottom-color: #808080;
+	color: #F0B429;
+	border-color: #808080;
+	border-top-color: #808080;
+	border-bottom-style: inset;
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #FFFFFF;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	color: #808080;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #F0B429;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .footer p {
+	color: #000000;
+	background-color: #F0B429;
+	text-align: center;
+}
+#apDiv1 {
+	position: absolute;
+	width: 963px;
+	height: 67px;
+	z-index: 1;
+	top: 92px;
+	left: 21px;
+}
+.container .footer .footer p strong {
+	text-align: center;
+}
+.container .content h1 {
+	color: #808080;
+}
+-->
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv2 {
+	position: absolute;
+	width: 441px;
+	height: 50px;
+	z-index: 1;
+	top: 146px;
+	left: 492px;
+	background-color: #EEEEEE;
+}
+#apDiv3 {
+	position: absolute;
+	width: 223px;
+	height: 70px;
+	z-index: 2;
+	left: 477px;
+	top: 418px;
+	border: 1 px;
+	border-style: solid;
+	color: #B3B3B3;
+}
+#apDiv4 {
+	position: absolute;
+	width: 974px;
+	height: 69px;
+	z-index: 3;
+	left: 194px;
+	top: 159px;
+	background-color: #EEEEEE;
+	visibility: hidden;
+}
+#apDiv5 {
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	z-index: 2;
+	left: 1074px;
+	top: 496px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 203px;
+	height: 39px;
+	z-index: 3;
+	left: 491px;
+	top: 292px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 4;
+	left: 829px;
+	top: 208px;
+}
+#apDiv8 {
+	position: absolute;
+	width: 164px;
+	height: 50px;
+	z-index: 5;
+	left: 932px;
+	top: 146px;
+	background-color: #EEEEEE;
+}
+#apDiv {	position: absolute;
+	width: 230px;
+	height: 50px;
+	z-index: 5;
+	left: 263px;
+	top: 146px;
+	background-color: #EEEEEE;
+}
+#apDiv9 {
+	position: absolute;
+	width: 150px;
+	height: 115px;
+	z-index: 6;
+	left: 314px;
+	top: 263px;
+}
+#apDiv10 {
+	position: absolute;
+	width: 152px;
+	height: 123px;
+	z-index: 7;
+	left: 314px;
+	top: 401px;
+}
+#apDiv11 {	position: absolute;
+	width: 203px;
+	height: 39px;
+	z-index: 3;
+	left: 424px;
+	top: 276px;
+}
+#apDiv12 {
+	position: absolute;
+	width: 200px;
+	height: 37px;
+	z-index: 8;
+	left: 493px;
+	top: 454px;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body class="content">
+
+<div class="container">
+<div class="header">
+  <p><a href="#"><img src="LOGO.JPG" alt="Insertar logotipo aquí" name="Insert_logo" width="180" height="105" id="Insert_logo" style="background-color: #FFFFFF; display: block;" /></a></p>
+  <div id="apDiv"></div>
+  <p>&nbsp;</p>
+  <div id="apDiv8"></div>
+  <p>&nbsp;</p> 
+<!-- end .header --></div>
+  <div class="content">
+<div id="apDiv2">
+  <ul id="MenuBar2" class="MenuBarHorizontal">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a class="MenuBarItemSubmenu" href="#">Documentos</a>
+      <ul>
+       <li><a href="Oracle.html">Oracle</a></li>
+        <li><a href="MySQL.HTML">MySQL</a></li>
+        <li><a href="SQL Server.html">SQL Server</a>
+        </li><li><a href="Teradata.html">Teradata</a></li>
+       
+      </ul>
+    </li>
+  </ul>
+  <ul id="MenuBar3" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="#">Multimedia</a>
+      <ul>
+        <li><a href="Videos.html">Videos</a></li>
+        <li><a href="Audios.html">Audios</a></li>
+              </ul>
+    </li>
+    <li><a class="MenuBarItemSubmenu" href="#">Actividades</a>
+      <ul>
+        <li><a class="MenuBarItemSubmenu" href="Actividad 1.html">Actividad 1</a>
+    </ul> 
+    </li>
+    <li><a href="Autor.html">Autor</a></li>
+  </ul>
+</div>
+<div></div>
+<h1>Sistemas de Gestión y Lengujes</h1>
+<div id="apDiv9"><a href="file:///D:/ESCRITORIO/UNAD%20MARIAN/PRIMER%20SEMMESTRE/DISEÑOS%20DE%20SITIOS%20WEB/TRABAJO%203/BDD/BDD.htm" target="_blank"><img src="SOPA DE LETRAS.JPG" width="141" height="121" /></a></div>
+<p>&nbsp;</p>
+<div id="apDiv6">
+  <p><strong>Sopa de Letras</strong></p>
+</div>
+<div id="apDiv10"><a href="file:///D:/ESCRITORIO/UNAD%20MARIAN/PRIMER%20SEMMESTRE/DISEÑOS%20DE%20SITIOS%20WEB/TRABAJO%203/RBDD/RBDD.htm" target="_blank"><img src="RELACIONAR.JPG" width="142" height="135" /></a></div>
+<div id="apDiv12"><strong>Relacionar las columnas</strong></div>
+<p>&nbsp;</p>
+<h2>&nbsp;</h2>
+<div id="apDiv5"><a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=file:///D:/ESCRITORIO/UNAD20MARIAN/PRIMER20SEMMESTRE/DISEC391OS20DE20SITIOS20WEB/TRABAJO203/index.html&digit=style/plain/3/&reloads=0" alt="" title="" border="0" /></a></div>
+<div id="apDiv7"><a class="twitter-timeline" data-width="300" data-height="250" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+<h2>&nbsp;</h2>
+<h2><!-- end .content --></h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="footer">
+    <div class="footer">
+      <p><strong>Copyright © 2017 MIVB Ltd. All rights reserved</strong>. <a target="_blank" href="https://www.adobe.com/go/gffooter_terms_of_use_es">Condiciones de uso</a> | <a rel="modal" href="https://www.adobe.com/es/privacy.html">Políticas de Privacidad</a> | <a rel="modal" href="https://www.adobe.com/es/privacy/cookies.html">Cookies</a></p>
+</div></div>
+  <!-- end .container -->
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar3 = new Spry.Widget.MenuBar("MenuBar3", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+  </script>
+</body>
+</html>
